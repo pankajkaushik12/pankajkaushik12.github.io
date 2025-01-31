@@ -3,7 +3,7 @@ main:
   - title: "Home"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "Projects"
-    url: /_pages/projects.md
+    url: /projects
   # - title: "Projects"
   #   url: /year-archive/
   # - title: "Sample Collections"
