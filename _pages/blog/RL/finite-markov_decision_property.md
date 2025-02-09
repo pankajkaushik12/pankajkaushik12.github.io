@@ -3,7 +3,7 @@ title: Finite Markov Decision Property
 permalink: /blog/RL/finite-markov_decision_property
 layout: single
 author_profile: true
-math: true
+mathjax: true
 ---
 
 ## Key Definition:
@@ -15,11 +15,11 @@ math: true
 At each time step, the environment presents a state $S_t$ to the agent, based on which the agent takes an action $A_t$. As a consequence, the agent receives a reward $R_{t+1}$, which leads the agent to the next state $S_{t+1}$. The agent chooses an action based on the policy $\pi$, where $\pi_t(a | s)$ represents the probability of choosing action $A_t = a$ given that the agent is in state $S_t = s$. -->
 
 ## Goal of the agent
-Goal of the agent is to maximize the reward over ther long term. Suppose if the agent received awards as $R_{t+1}$, $R_{t+2}$, _, _, _, $R_{T}$ after time step $t$, then it seeks to maximize the return $`G_t`$, 
+Goal of the agent is to maximize the reward over ther long term. Suppose if the agent received awards as $R_{t+1}$, $R_{t+2}$, _, _, _, $R_{T}$ after time step $t$, then it seeks to maximize the return $G_t$, 
 
-```math
+$$
 G_t = \sum_{k=0}^{T} R_{t + k + 1} \tag{1}
-```
+$$
 
 where T is the final time step or where the interaction between the agent and environment  breaks. We also call this the end of the episode or trial. The tasks which have such terminal state are called *episodic tasks*, and the tasks where the interaction does not break into episodes are called *continuing tasks*. For continuing tasks as T $\rightarrow$ $\infty$, the returned sum in equation (1) reaches infinity.
 
