@@ -3,6 +3,7 @@ title: Finite Markov Decision Property
 permalink: /blog/RL/finite-markov_decision_property
 layout: single
 author_profile: true
+math: true
 ---
 
 ## Key Definition:
