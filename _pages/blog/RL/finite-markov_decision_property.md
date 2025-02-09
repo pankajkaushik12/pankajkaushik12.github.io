@@ -17,9 +17,9 @@ At each time step, the environment presents a state $S_t$ to the agent, based on
 ## Goal of the agent
 Goal of the agent is to maximize the reward over ther long term. Suppose if the agent received awards as $R_{t+1}$, $R_{t+2}$, _, _, _, $R_{T}$ after time step $t$, then it seeks to maximize the return $`G_t`$, 
 
-$$
+```math
 G_t = \sum_{k=0}^{T} R_{t + k + 1} \tag{1}
-$$
+```
 
 where T is the final time step or where the interaction between the agent and environment  breaks. We also call this the end of the episode or trial. The tasks which have such terminal state are called *episodic tasks*, and the tasks where the interaction does not break into episodes are called *continuing tasks*. For continuing tasks as T $\rightarrow$ $\infty$, the returned sum in equation (1) reaches infinity.
 
