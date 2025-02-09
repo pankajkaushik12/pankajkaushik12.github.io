@@ -1,3 +1,10 @@
+---
+title: Blogs
+permalink: /blogs/
+layout: single
+author_profile: true
+---
+
 # Finite Markov Decision Property
 
 ## Key Definition:

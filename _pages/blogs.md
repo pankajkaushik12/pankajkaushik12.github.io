@@ -1,8 +1,8 @@
 ---
 title: Blogs
-permalink: /blog/
+permalink: /blogs/
 layout: single
 author_profile: true
 ---
 
-# [Finite Markov Decision Property](/_pages/blog/RL/finite-markov_decision_property.md)
+# [Finite Markov Decision Property](/_pages/blog/RL/finite-markov_decision_property)
