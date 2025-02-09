@@ -12,9 +12,9 @@ math: true
 - *State*: Information about the environment available to the agent.
 
 ## Flow
-At each time step, environemnt presents a state $S_t$ to the agent based on which the agent takes an action $A_t$. As a consequence, the agent receives an award $R_{t + 1}$ that leads the agent to state $S_{t+1}$.
+At each time step, the environment presents a state $S_t$ to the agent, based on which the agent takes an action $A_t$. As a consequence, the agent receives a reward $R_{t+1}$, which leads the agent to the next state $S_{t+1}$.
 
-Agent chooses action based on the policy $\pi$, where $\pi_t$(a|s) is the probability with which the agent chooses action $A_t$ = a is taken at time step $S_t$ = s.
+The agent chooses an action based on the policy $\pi$, where $\pi_t(a | s)$ represents the probability of choosing action $A_t = a$ given that the agent is in state $S_t = s$.
 
 ## Goal of the agent
 Goal of the agent is to maximize the reward over ther long term. Suppose if the agent received awards as $R_{t+1}$, $R_{t+2}$, _, _, _, $R_{T}$ after time step $t$, then it seeks to maximize the return $G_t$, 
