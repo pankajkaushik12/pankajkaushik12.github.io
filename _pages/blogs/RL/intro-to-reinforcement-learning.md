@@ -1,1 +1,0 @@
-In reinforcement learning a learner/agent interact with the environment to achieve a goal, and while doing so it gets *rewards* to each action. 
