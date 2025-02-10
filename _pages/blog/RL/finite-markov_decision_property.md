@@ -12,7 +12,7 @@ mathjax: true
 - *State*: Information about the environment available to the agent.
 
 ## Flow
-At each time step, the environment presents a state $S_t$ to the agent, based on which the agent takes an action $A_t$. As a consequence, the agent receives a reward $R_{t+1}$, which leads the agent to the next state $S_{t+1}$. The agent chooses an action based on the policy $\pi$, where $\pi_t(a | s)$ represents the probability of choosing action $A_t = a$ given that the agent is in state $S_t = s$.
+At each time step, the environment presents a state $S_t$ to the agent, based on which the agent takes an action $A_t$. As a consequence, the agent receives a reward $R_{t+1}$, which leads the agent to the next state $S_{t+1}$. The agent chooses an action based on the policy $\pi$, where $\pi_t(a \| s)$ represents the probability of choosing action $A_t = a$ given that the agent is in state $S_t = s$.
 
 ## Goal of the agent
 Goal of the agent is to maximize the reward over ther long term. Suppose if the agent received awards as $R_{t+1}$, $R_{t+2}$, _, _, _, $R_{T}$ after time step $t$, then it seeks to maximize the return $G_t$, 
@@ -64,7 +64,7 @@ Using equation (4), we can derive the following:
     $$
     - The expectation is taken over all possible next state and reward, given that the agent is in state *s* and takes action *t*.
     - Since rewards are stochastic, we sum over all the possible value of r, each of which is weighted by its propability.
-    - p(s', r| s, a) represents the probability of reaching state *s'* and receiving the award *r*, given that the agent is in state *s* and takes action *t*. This account the fact the agent may get different reward depending on the next state.
+    - p(s', r\| s, a) represents the probability of reaching state *s'* and receiving the award *r*, given that the agent is in state *s* and takes action *t*. This account the fact the agent may get different reward depending on the next state.
 
 - *State transition probability*
 
@@ -114,7 +114,7 @@ v_{\pi}(s) = E_{\pi}[G_t | S_t = s] \\
 = \sum_{a} \pi (a|s) * \sum_{s', r} p(s', r | s, a)[r + \gamma * v_{\pi}(s')]       \tag{10}
 $$
 
-If environment state changes to *s'* by receiving award *r* after taking action *a* in state *s*, then expected future reward will be [r + $v_{\pi}$(s')]. Here this value is weighted by the p(s', r | s , a). The sum over all possible pair of *s'* and *r* is then multiplied by the probability $\pi$(a|s), of taking action *a* in state *s*.
+If environment state changes to *s'* by receiving award *r* after taking action *a* in state *s*, then expected future reward will be [r + $v_{\pi}$(s')]. Here this value is weighted by the p(s', r \| s , a). The sum over all possible pair of *s'* and *r* is then multiplied by the probability $\pi$(a\|s), of taking action *a* in state *s*.
 
 
 ## Optimal Value functions
