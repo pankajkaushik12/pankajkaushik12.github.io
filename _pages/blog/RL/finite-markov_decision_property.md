@@ -3,8 +3,8 @@ title: Finite Markov Decision Property
 permalink: /blog/RL/finite-markov_decision_property
 layout: single
 author_profile: true
+tags: [MathJax, Mathematic]
 mathjax: true
-math: true
 ---
 
 ## Key Definition:
