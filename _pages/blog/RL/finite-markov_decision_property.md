@@ -83,7 +83,7 @@ Using equation (4), we can derive the following:
 
 ## Value function
 
-Value function estimates how good it is for the agent to be in a given state. Goodness is defined in terms of expected future reward, which is turn depends on the agent's policy $$\pi$$(a|s), probability of taking action *a* in state *s*.
+Value function estimates how good it is for the agent to be in a given state. Goodness is defined in terms of expected future reward, which is turn depends on the agent's policy $$\pi$$(a\|s), probability of taking action *a* in state *s*.
 
 We define the expected return given the current state *s* and policy $$\pi$$, as
 
