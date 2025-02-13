@@ -7,9 +7,9 @@ use_math: true
 ---
 
 ## Key Definition:
-- *Agent*: Decision Maker
-- *Environment*: Anything to which the agent interact
-- *State*: Information about the environment available to the agent.
+- *Agent*: The decision maker that interacts with the environment.
+- *Environment*: Everything the agent interacts with.
+- *State*: The information about the environment available to the agent.
 
 ## Flow
 At each time step, the environment presents a state $$S_t$$ to the agent, based on which the agent takes an action $$A_t$$. As a consequence, the agent receives a reward $$R_{t+1}$$, which leads the agent to the next state $$S_{t+1}$$. The agent chooses an action based on the policy $$\pi$$, where $$\pi_t(a \| s)$$ represents the probability of choosing action $$A_t = a$$ given that the agent is in state $$S_t = s$$.
@@ -83,7 +83,7 @@ Using equation (4), we can derive the following:
 
 ## Value function
 
-Value function estimates how good it is for the agent to be in a given state. Goodness is defined in terms of expected future reward, which is turn depends on the agent's policy $$\pi(a|s)$$, probability of taking action *a* in state *s*.
+Value function estimates how good it is for the agent to be in a given state. Goodness is defined in terms of expected future reward, which is turn depends on the agent's policy $$\pi(a\|s)$$, probability of taking action *a* in state *s*.
 
 We define the expected return given the current state *s* and policy $$\pi$$, as
 
