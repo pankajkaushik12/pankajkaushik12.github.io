@@ -63,7 +63,7 @@ Using equation (4), we can derive the following:
     = \sum_{r\in R}^{} r * \sum_{s'\in S}^{} p(s', r| s, a) \tag{5}
     $$
     - The expectation is taken over all possible next state and reward, given that the agent is in state *s* and takes action *t*.
-    - Since rewards are stochastic, we sum over all the possible value of r, each of which is weighted by its propability.
+    - Since rewards are stochastic, we sum over all the possible value of r, each of which is weighted by its probability.
     - p(s', r\| s, a) represents the probability of reaching state *s'* and receiving the award *r*, given that the agent is in state *s* and takes action *t*. This account the fact the agent may get different reward depending on the next state.
 
 - *State transition probability*
