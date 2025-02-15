@@ -5,6 +5,11 @@ layout: single
 author_profile: true
 ---
 
+## [Learning to Drive with Reinforcement Learning](https://github.com/pankajkaushik12/LearnToDriveWithRL.git)
+This project demonstrates how to train an AI agent to drive using **Reinforcement Learning (RL)** in **Unreal Engine 5**.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3FySgZmYdn8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## [Foveated Rendering](https://github.com/pankajkaushik12/Foveated-Rendering)
 This project implements foveated rendering based on the paper ["Rectangular Mapping-based Foveated Rendering"](https://ieeexplore.ieee.org/document/9756831).
 
