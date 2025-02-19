@@ -32,7 +32,7 @@ where $$\gamma$$ is called the *discount rate* and lies between (0, 1).
 
 The *discount rate* determines the current value of the future reward. Suppose, the agent will receive the reward $$R_{t+k}$$ at $$k$$ steps in future, then its value decreases by $$\gamma^{k - 1}$$ times to what it worth if it received immediately.
 
-If $$\gamma$$ = 0, then we called the agent a **myopic** as it only concerned or immediate reward. As the value of $$\gamma$$ increases, the agent becomes more farsighted.
+If $$\gamma$$ = 0, then we called the agent a **myopic** as it only concerned for the immediate reward. As the value of $$\gamma$$ increases, the agent becomes more farsighted.
 
 We can define the return of total reward for *episodic task* and *continuing task* tasks with a single notation by adding an *absorbing state* to the terminal state which inturn return to itself by giving reward 0.
 
@@ -82,7 +82,7 @@ Using equation (4), we can derive the following:
 
 ## Value function
 
-Value function estimates how good it is for the agent to be in a given state. Goodness is defined in terms of expected future reward, which is turn depends on the agent's policy $$\pi$$(a\|s), probability of taking action *a* in state *s*.
+Value function estimates how good it is for the agent to be in a given state. Goodness is defined in terms of expected future reward, which in turn depends on the agent's policy $$\pi$$(a\|s), probability of taking action *a* in state *s*.
 
 We define the expected return given the current state *s* and policy $$\pi$$, as
 
@@ -107,7 +107,7 @@ For any policy $$\pi$$ and any state *s*, the following consistency condition ho
 $$
 v_{\pi}(s) = E_{\pi}[G_t | S_t = s] \\
 = E_{\pi}[\sum_{k = 0}^{\infty} \gamma^k * R_{t+k+1} | S_t = s] \\
-= E_{\pi}[R_{t + 1} + \gamma * \sum_{k = 1}^{\infty} \gamma^k * R_{t+k+1} | S_t = s] \\
+= E_{\pi}[R_{t + 1} + \sum_{k = 1}^{\infty} \gamma^k * R_{t+k+1} | S_t = s] \\
 = E_{\pi}[R_{t+1} + \gamma * \sum_{k = 0}^{\infty} \gamma ^ k * R_{t+k+2}|S_t = s] \\
 = \sum_{a} \pi (a|s) * \sum_{s'} \sum_{r} p(s', r | s, a)[r + \gamma * E[ \sum_{k = 0}^{\infty} \gamma ^ k * R_{t+k+2} | S_t = s]] \\
 = \sum_{a} \pi (a|s) * \sum_{s', r} p(s', r | s, a)[r + \gamma * v_{\pi}(s')]       \tag{10}
