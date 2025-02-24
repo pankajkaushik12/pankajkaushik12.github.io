@@ -114,8 +114,8 @@ analytics:
 # Site Author
 author:
   name             : "Pankaj Kaushik"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a Graphics programmer."
+  avatar           : "/images/myself.jpg"
+  bio              : "Graphics Programmer"
   location         : "Delhi, India"
   email            : "pankajkaushik12r@gmail.com"
   links:
