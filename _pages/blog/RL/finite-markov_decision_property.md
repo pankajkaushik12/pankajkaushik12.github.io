@@ -99,7 +99,7 @@ q_{\pi}(s, a) = E_{\pi}[G_t | S_t = s, A_t = a] \\
 = E_{\pi}[\sum_{k = 0}^{\infty} \gamma^k * R_{t+k+1} | S_t = s, A_t = a]     \tag{9} 
 $$
 
-$$q_{\pi}$$ is called the *action-value function* for policy $$\pi$$.
+where, $$q_{\pi}$$ is called the *action-value function* for policy $$\pi$$.
 
 ## Recursive nature of *State-Value function*
 For any policy $$\pi$$ and any state *s*, the following consistency condition holds between the value of s and the value of its possible successor states:

@@ -1,3 +1,11 @@
+---
+title: Starting with Vulkan
+permalink: /starting-with-vulkan
+layout: single
+author_profile: false
+---
+
+
 Starting with Vulkan is easy. Below I will write the steps to build and render a triangle with Vulkan in Windows 11.
 
 As a first step you needs to download the Vulkan sdk from ([LunarG](https://vulkan.lunarg.com/sdk/home#windows)) and follow the steps given in the tutorial their official ([tutorial](https://vulkan-tutorial.com/)).
@@ -22,7 +30,7 @@ This create a window with *glfwCreateWindow* after intializing glfw with *glfwIn
 Initializing Vulkan itself takes multiple steps.
 
 -  Creating a Vulkan instance with *vkCreateInstance*, which takes 3 parameters:
-    - Pointer to *VkInstanceCreateInfo* which we uses to define the properties like, set the extensions to be enabled (*ppEnabledExtensionNames*), set the names of validation layers to be enabled, *VkApplicationInfo*.
+    - Pointer to *VkInstanceCreateInfo* which we uses to define the properties like, set of extensions to be enabled (*ppEnabledExtensionNames*), set the names of validation layers to be enabled, *VkApplicationInfo*.
     - VkAllocationCallbacks which can be set to *nullptr* initially.
     - Reference to *VkInstance*.
 - Creating a Surface *VkSurfaceKHR*, if you do want to visualize the rendering to a window. Surface handle can be created with *glfwCreateWindowSurface* that takes 4 parameter:
@@ -36,4 +44,5 @@ Initializing Vulkan itself takes multiple steps.
     - Reference to *VkDeviceCreateInfo*.
     - Reference to *VkAllocationCallbacks*.
     - Reference to *VkDevice*.
-- After creating handle to *VkDevice*, we can get the queues associated with it.
+- After creating handle to *VkDevice*, we can get the queues associated with it by the *vkFetDeviceQueue* API call.
+- Next to thing to do is to create a swapchain.

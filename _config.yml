@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dirt" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -21,7 +21,7 @@ title                    : "Pankaj Kaushik"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Pankaj Kaushik"
-description              : "I am a Graphics programmer"
+description              : "I am a software developer specializing in real-time graphics, AI-driven game development, and physics simulations. With expertise in C++, CUDA, OptiX, and Unreal Engine, I build rendering and AI systems. My recent work includes implementing physically based rendering, foveated rendering, and reinforcement learning agents in Unreal Engine 5. I thrive on optimizing performance, exploring modern computer architecture, and integrating advanced physics engines like PhysX."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -314,7 +314,7 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "home.md"
       type: posts
     values:
       layout: single
