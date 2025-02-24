@@ -3,6 +3,7 @@ title: Setting Up Learning Agents in Unreal Engine 5
 permalink: /unreal-learning-agent
 layout: single
 author_profile: false
+classes: wide
 ---
 
 ## Introduction

@@ -3,6 +3,7 @@ title: Projects
 permalink: /projects/
 layout: single
 author_profile: true
+classes: wide
 ---
 
 ## [Learning to Drive with Reinforcement Learning](https://github.com/pankajkaushik12/LearnToDriveWithRL.git)

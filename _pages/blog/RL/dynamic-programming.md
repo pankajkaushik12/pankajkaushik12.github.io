@@ -3,6 +3,7 @@ title: Dynamic Programming
 permalink: /blog/RL/dynamic-programming
 layout: single
 author_profile: false
+classes: wide
 ---
 
 
