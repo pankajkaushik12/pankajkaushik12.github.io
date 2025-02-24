@@ -3,6 +3,7 @@ title: About Me
 permalink: /
 layout: single
 author_profile: true
+classes: wide
 ---
 
 <p style="text-align: justify;">
@@ -10,5 +11,5 @@ I am a software developer specializing in real-time graphics, AI-driven game dev
 </p>
 
 <p style="text-align: center;">
-Check out my [projects](/projects) to see my latest work!
+Check out my <a href="/projects">projects</a> to see my latest work!
 </p>
